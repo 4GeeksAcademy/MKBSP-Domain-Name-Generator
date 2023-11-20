@@ -20,7 +20,7 @@ window.onload = function() {
       for (var b = 0; b < arrayNoun.length; b++) {
         for (var c = 0; c < arrayTLD.length; c++) {
           domains +=
-            "<li>" +
+            "<li class= 'list-group-item' >" +
             arrayPronoun[i] +
             arrayAdj[a] +
             arrayNoun[b] +
