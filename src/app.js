@@ -12,16 +12,23 @@ window.onload = function() {
   let arrayNoun = ["soccer", "venture", "horizon"];
   let arrayTLD = [".org", ".net", ".com"];
 
+  let domains = "";
+
   //Nested Loops printing the domain name combinations to the Console.
   for (var i = 0; i < arrayPronoun.length; i++) {
     for (var a = 0; a < arrayAdj.length; a++) {
       for (var b = 0; b < arrayNoun.length; b++) {
         for (var c = 0; c < arrayTLD.length; c++) {
-          console.log(
-            arrayPronoun[i] + arrayAdj[a] + arrayNoun[b] + arrayTLD[c]
-          );
+          domains +=
+            "<li>" +
+            arrayPronoun[i] +
+            arrayAdj[a] +
+            arrayNoun[b] +
+            arrayTLD[c] +
+            "</li>";
         }
       }
     }
   }
+  document.querySelector("#domains").innerHTML = domains;
 };
